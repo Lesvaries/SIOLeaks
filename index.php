@@ -1,4 +1,6 @@
 <?php
+include_once('app/models/connection-bdd.php');
+
 
 if (!isset($_GET['section']) OR $_GET['section'] == 'index')
 {
