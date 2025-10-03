@@ -3,6 +3,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIOLeaks</title>
 
+    <!-- Librairy -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
     <!-- Favicon links -->
     <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./public/assets/img/favicon/favicon-32.png">
@@ -13,6 +17,7 @@
     <link rel="icon" type="image/png" sizes="512x512" href="./public/assets/img/favicon/android-chrome-512x512.png">
 
     <!-- Stylesheet link -->
+    <link rel="stylesheet" href="./public/assets/css/color.css">
     <link rel="stylesheet" href="./public/assets/css/header.css">
 </head>
 
@@ -20,12 +25,16 @@
     <header class="main-header">
         <div class="container">
             <div class="header-content">
-            <a href="/" class="logo"> <img src="./public/assets/img/icon/icon_header.png" alt="Logo"> </a>
+            <a href="index.php" class="logo"> <img src="./public/assets/img/icon/icon_header.png" alt="Logo"> </a>
+
             <nav class="nav-menu">
                 <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.php?section=index">Accueil</a></li>
+                <li><a href="#">Cours</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>     
+                <li><a href="#">Se Connecter</a></li>
+                <li><a href="#">S'inscrire</a></li>          
                 </ul>
             </nav>
 
@@ -41,9 +50,5 @@
             </div>
         </div>
     </header>
-    
-<section class="test">
-    <p>test</p>
-</section>
 
 </body>
