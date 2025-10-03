@@ -1,3 +1,3 @@
 <?php
-include_once('app/views/v_sing-up.php');
+include_once('app/views/v_sign-up.php');
 ?>
