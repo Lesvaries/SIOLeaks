@@ -18,23 +18,25 @@
 
     <!-- Stylesheet link -->
     <link rel="stylesheet" href="./public/assets/css/color.css">
+    <link rel="stylesheet" href="./public/assets/css/main.css">
     <link rel="stylesheet" href="./public/assets/css/header.css">
+
 </head>
 
 <body>
     <header class="main-header">
-        <div class="container">
+        <div class="header-container">
             <div class="header-content">
             <a href="index.php" class="logo"> <img src="./public/assets/img/icon/icon_header.png" alt="Logo"> </a>
 
             <nav class="nav-menu">
                 <ul>
                 <li><a href="index.php?section=index">Accueil</a></li>
-                <li><a href="#">Cours</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact</a></li>     
-                <li><a href="#">Se Connecter</a></li>
-                <li><a href="#">S'inscrire</a></li>          
+                <li><a href="index.php?section=cours" title="Cours">Cours</a></li>
+                <li><a href="index.php?section=about" title="About">About us</a></li>
+                <li><a href="index.php?section=contact" title="Contact">Contact</a></li>     
+                <li><a href="index.php?section=login" title="Login">Se Connecter</a></li>
+                <li><a href="index.php?section=sign-up" title="Sign-Up">S'inscrire</a></li>          
                 </ul>
             </nav>
 
