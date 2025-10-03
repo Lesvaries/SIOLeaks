@@ -13,5 +13,37 @@
     <link rel="icon" type="image/png" sizes="512x512" href="./public/assets/img/favicon/android-chrome-512x512.png">
 
     <!-- Stylesheet link -->
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="./public/assets/css/header.css">
 </head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+            <a href="/" class="logo"> <img src="./public/assets/img/icon/icon_header.png" alt="Logo"> </a>
+            <nav class="nav-menu">
+                <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- <nav class="nav-menu-program">
+                <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                </ul>
+            </nav> -->
+
+
+            </div>
+        </div>
+    </header>
+    
+<section class="test">
+    <p>test</p>
+</section>
+
+</body>

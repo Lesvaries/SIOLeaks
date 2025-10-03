@@ -1,0 +1,36 @@
+Structure du dossier pour le volume Goliath
+Le num‚ro de s‚rie du volume est 4285-1933
+D:.
+³   arborescence.txt
+³   index.php
+³   README.md
+³   
+ÃÄÄÄapp
+³   ÃÄÄÄcontrollers
+³   ÃÄÄÄmodels
+³   ÀÄÄÄviews
+³       ÃÄÄÄcomponent
+³       ÀÄÄÄlayouts
+³               header.php
+³               
+ÀÄÄÄpublic
+    ³   favicon.ico
+    ³   site.webmanifest
+    ³   
+    ÃÄÄÄassets
+    ³   ÃÄÄÄcss
+    ³   ÃÄÄÄfont
+    ³   ÃÄÄÄimg
+    ³   ³   ÃÄÄÄfavicon
+    ³   ³   ³       android-chrome-192x192.png
+    ³   ³   ³       android-chrome-512x512.png
+    ³   ³   ³       apple-touch-icon.png
+    ³   ³   ³       favicon-16x16.png
+    ³   ³   ³       favicon-32x32.png
+    ³   ³   ³       
+    ³   ³   ÀÄÄÄicon
+    ³   ³           icon_favicon.png
+    ³   ³           icon_header.png
+    ³   ³           
+    ³   ÀÄÄÄjs
+    ÀÄÄÄuploads
