@@ -24,3 +24,4 @@
 @import './utilities/transitions.css';
 
  /* 6. THEME  */
+@import './theme/theme.css';

@@ -1,5 +1,4 @@
-
-
+<body>
     <main class="main-content">
         <div class="container">
             <section class="content-section">
@@ -8,6 +7,7 @@
             </section>
         </div>
     </main>
+</body>
 
     
     

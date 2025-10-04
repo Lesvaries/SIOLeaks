@@ -48,6 +48,7 @@
     position: relative;
     font-weight: 500;
     padding: 8px 12px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .nav-menu ul li a::after {

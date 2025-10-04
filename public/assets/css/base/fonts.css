@@ -1,7 +1,7 @@
 /* Inter Variable - Normal */
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter/Inter-Regular.woff2') format('woff2');
+  src: url('../../fonts/Inter/Inter-Regular.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -36,6 +36,8 @@
   font-display: swap;
 }
 
+
+
 /* Open Sans Variable - Normal */
 @font-face {
   font-family: 'Open Sans';
@@ -54,10 +56,12 @@
   font-display: swap;
 }
 
+
+
 /* Overpas Variable - Norma */
 @font-face {
   font-family: 'Overpass';
-  src: url('../../fonts/OpenSans/OpenSans-VariableFont_wdth,wght.woff2') format('woff2');
+  src: url('../../fonts/Overpass/Overpass-VariableFont_wght.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -70,3 +74,6 @@
   font-style: italic;
   font-display: swap;
 }
+
+
+

@@ -1,1 +1,3 @@
-<p>Hello World (about.php)</p>
+<body>
+    <p>Hello World (about.php)</p>
+</body>
