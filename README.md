@@ -30,7 +30,7 @@ Le site vise à rendre l’apprentissage accessible et organisé, en évitant la
 
 ## Arborescence du projet
 
-SIOLeaks/
+SIOLeaks/<br>
 ├── .gitignore<br>
 ├── arborescence.txt<br>
 ├── index.php<br>
