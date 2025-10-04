@@ -57,7 +57,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #007BFF;
+  background: var(--primary-color);
 }
 
 .nav-menu ul li a:hover::after {
@@ -65,17 +65,17 @@
     transition: width 0.3s ease;
 }
 
-.nav-menu ul li a.active::after,
-.nav-menu ul li a.active:hover::after {
-  width: 100% !important;
-}
-
 .nav-menu ul li a:hover {
     color: var(--primary-color);
-    transition: color 0.3s;
+    transition: color 0.3s ease;
+}
+
+.nav-menu ul li a.active::after,
+.nav-menu ul li a.active:hover::after {
+  width: 100%;
 }
 
 .nav-menu ul li a.active,
 .nav-menu ul li a.active:hover {
-  color: #007BFF !important;
+  color: var(--primary-color);
 }

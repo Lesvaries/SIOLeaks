@@ -1,4 +1,4 @@
 <?php
-include_once('app/views/v_about.php');
+include_once('app/views/about.view.php');
 
 ?>

@@ -6,6 +6,7 @@
 
  /* 1. BASE */
 @import './base/reset.css';
+@import './base/color.css';
 /* @import './base/variables.css'; */
 /* @import './base/typography.css'; */
 @import './base/fonts.css';
@@ -19,7 +20,6 @@
 @import './pages/home.css';
 
  /* 5. UTILITIES  */
-@import './utilities/color.css';
 
 @import './utilities/transitions.css';
 
