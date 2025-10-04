@@ -17,10 +17,6 @@
     <link rel="icon" type="image/png" sizes="512x512" href="./public/assets/img/favicon/android-chrome-512x512.png">
 
     <!-- Stylesheet link -->
-    <link rel="stylesheet" href="./public/assets/css/color.css">
-    <link rel="stylesheet" href="./public/assets/css/fonts.css">
-    <link rel="stylesheet" href="./public/assets/css/transitions.css">
     <link rel="stylesheet" href="./public/assets/css/main.css">
-    <link rel="stylesheet" href="./public/assets/css/header.css">
 
 </head>
