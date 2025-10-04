@@ -18,6 +18,7 @@
 
     <!-- Stylesheet link -->
     <link rel="stylesheet" href="./public/assets/css/color.css">
+    <link rel="stylesheet" href="./public/assets/css/transitions.css">
     <link rel="stylesheet" href="./public/assets/css/main.css">
     <link rel="stylesheet" href="./public/assets/css/header.css">
 
@@ -27,7 +28,7 @@
     <header class="main-header">
         <div class="header-container">
             <div class="header-content">
-            <a href="index.php" class="logo"> <img src="./public/assets/img/icon/icon_header.png" alt="Logo"> </a>
+            <a href="index.php" class="logo"> <img src="./public/assets/img/icon/icon_header2.png" alt="Logo"> </a>
 
             <nav class="nav-menu">
                 <ul>
@@ -52,5 +53,7 @@
             </div>
         </div>
     </header>
+
+    <script src="./public/assets/js/header.js"></script>
 
 </body>

@@ -7,8 +7,9 @@ include_once('layouts/header.php');
         <div class="container">
             <section class="content-section">
                 <h1>Bienvenue sur SIOLeaks</h1>
-                <p>Votre plateforme d'apprentissage en ligne pour les étudiants en SIO.</p>
-                <a href="#" class="btn-primary">Acceder aux cours</a>
+                <a href="index.php?section=cours" class="hero-btn-primary">Acceder aux cours</a>
             </section>
         </div>
     </main>
+
+    

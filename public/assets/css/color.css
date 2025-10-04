@@ -2,5 +2,7 @@
     --primary-color: #2170e1;
     --secondary-color: #FF9800;
     --background-color: #f4f4f4;
-    --text-color: #333;
+
+    --font-color-dark: #111;
+    --font-color-light: #f5f5f5;
 }
