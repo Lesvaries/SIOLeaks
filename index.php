@@ -1,6 +1,9 @@
 <?php
 include_once('app/models/connection-bdd.php');
 
+include_once('app/views/layouts/head.php');
+include_once('app/views/layouts/header.php');
+
 
 if (!isset($_GET['section']) OR $_GET['section'] == 'index')
 {
@@ -32,3 +35,4 @@ else
 }
 ?>
 
+<script src="./public/assets/js/header.js"></script>

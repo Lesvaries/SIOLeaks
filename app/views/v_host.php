@@ -1,7 +1,4 @@
-<?php
-// Include le header
-include_once('layouts/header.php');
-?>
+
 
     <main class="main-content">
         <div class="container">
