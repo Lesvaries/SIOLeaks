@@ -4,7 +4,7 @@
     <header class="main-header">
         <div class="header-container">
             <div class="header-content">
-            <a href="index.php?section=index" class="logo"> <img src="./public/assets/img/icon/icon_header2.png" alt="Logo"> </a>
+            <a href="index.php?section=index" class="logo"> <img src="./public/assets/img/icon/icon_header.png" alt="Logo"> </a>
 
             <nav class="nav-menu">
                 <ul>
@@ -13,7 +13,7 @@
                     <li><a href="index.php?section=about" title="About">About us</a></li>
                     <li><a href="index.php?section=contact" title="Contact">Contact</a></li>     
                     <li><a href="index.php?section=login" title="Login">Se Connecter</a></li>
-                    <li><a href="index.php?section=sign-up" title="Sign-Up">S'inscrire</a></li>          
+                    <li><a href="index.php?section=sign-up" title="SignUp">S'inscrire</a></li>          
                 </ul>
             </nav>
 

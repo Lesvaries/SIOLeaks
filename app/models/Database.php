@@ -2,7 +2,7 @@
 
 // Connexion à la base de données sioleaks-bss requise 
 
-require 'credentials.php';
+require 'config.php';
 try
 {
  

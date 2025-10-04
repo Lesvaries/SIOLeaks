@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container {
+.container-hero {
     background-image: url('../../img/hero_bg2.png');
     background-size: cover;
     background-position: center;
