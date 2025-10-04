@@ -10,7 +10,7 @@
 /* Inter Variable - Italic */
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter/Inter-Italic.woff2') format('woff2');
+  src: url('../../fonts/Inter/Inter-Italic.woff2') format('woff2');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -21,7 +21,7 @@
 /* Roboto Variable - Normal */
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2');
+  src: url('../../fonts/Roboto/Roboto-Regular.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -30,7 +30,7 @@
 /* Roboto Variable - Italic */
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto/Roboto-Italic.woff2') format('woff2');
+  src: url('../../fonts/Roboto/Roboto-Italic.woff2') format('woff2');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -39,7 +39,7 @@
 /* Open Sans Variable - Normal */
 @font-face {
   font-family: 'Open Sans';
-  src: url('../fonts/OpenSans/OpenSans-VariableFont_wdth,wght.woff2') format('woff2');
+  src: url('../../fonts/OpenSans/OpenSans-VariableFont_wdth,wght.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,24 @@
 /* Open Sans - Italic */
 @font-face {
   font-family: 'Open Sans';
-  src: url('../fonts/OpenSans/OpenSans-Italic-VariableFont_wdth,wght.woff2') format('woff2');
+  src: url('../../fonts/OpenSans/OpenSans-Italic-VariableFont_wdth,wght.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Overpas Variable - Norma */
+@font-face {
+  font-family: 'Overpass';
+  src: url('../../fonts/OpenSans/OpenSans-VariableFont_wdth,wght.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+/* Overpass Variable - Italic */
+@font-face {
+  font-family: 'Overpass';
+  src: url('../../fonts/Overpass/Overpass-Italic-VariableFont_wght.woff2') format('woff2');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
