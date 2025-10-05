@@ -34,7 +34,7 @@ SIOLeaks/<br>
 ├── .gitignore<br>
 ├── arbo.txt<br>
 ├── index.php<br>
-├── README.md<br><br>
+├── README.md<br>
 ├── app<br>
 │   ├── controllers<br>
 │   │   ├── About.php<br>
@@ -60,13 +60,13 @@ SIOLeaks/<br>
 │       ├── components<br>
 │       └── layouts<br>
 │           ├── head.php<br>
-│           └── header.php<br><br>
+│           └── header.php<br>
 ├── database<br>
 │   ├── backups<br>
 │   │   ├── sioleaks-bdd.sql<br>
 │   │   └── sioleaks-user.sql<br>
 │   └── migrations<br>
-│       └── 20251004_sioleaks-structure.sql<br><br>
+│       └── 20251004_sioleaks-structure.sql<br>
 └── public<br>
     ├── favicon.ico<br>
     ├── site.webmanifest<br>
