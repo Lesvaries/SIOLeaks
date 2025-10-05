@@ -1,5 +1,5 @@
 <?php
-include_once('app/models/Database.php');
+include_once('./app/models/Database.php');
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Validation du mot de passe avec regex (1 maj, 1 chiffre, 1 symbole, 12 caractères min)
-    if (!preg_match('/^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{12,}$/', $password)) {
+    if (!preg_match('/^(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d]).{12,}$/', $password)) {
         $error = "Le mot de passe doit contenir au moins 12 caractères, une majuscule, un chiffre et un symbole.";
     }
 
@@ -44,6 +44,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Erreur lors de l'ajout de l'utilisateur : " . $e->getMessage();
         }
     }
+
+    echo $error; // Affiche l'erreur si elle existe
 
 }
 ?>

@@ -53,9 +53,18 @@ else
     {  
             include_once('app/controllers/Login.php');
     }
+    if ($_GET['section'] == 'logout')
+    {  
+            $cnxUser=false;
+            include_once('app/controllers/AuthController.php');
+    }
 	if ($_GET['section'] == 'sign-up')
     {  
             include_once('app/controllers/SignUp.php');
+    }
+    if ($_GET['section'] == 'register-controller')
+    {  
+            include_once('app/controllers/RegisterController.php');
     }
 }
 ?>

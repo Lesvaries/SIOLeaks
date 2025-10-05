@@ -39,7 +39,9 @@
     gap: 20px;
 }
 
-.nav-menu ul li a {
+.nav-menu ul li a,
+.nav-menu ul li p
+ {
     display: flex;
     justify-content: center;
     align-items: center;
