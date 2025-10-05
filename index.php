@@ -2,6 +2,11 @@
 session_start();
 include_once('app/models/database.php');
 
+if (!isset($_GET['section'])) {
+    header('Location: index.php?section=index');
+    exit;
+}
+
 if ($_GET['section'] == 'cnxAuth') {
     $cnxUser=true;
     include_once('app/controllers/AuthController.php');
