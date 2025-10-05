@@ -32,106 +32,94 @@ Le site vise à rendre l’apprentissage accessible et organisé, en évitant la
 
 SIOLeaks/<br>
 ├── .gitignore<br>
-├── arborescence.txt<br>
+├── arbo.txt<br>
 ├── index.php<br>
-├── README.md<br>
-├── <br>
-├── app/<br>
-│   ├── controllers/<br>
-│   │   ├── about.php<br>
-│   │   ├── contact.php<br>
-│   │   ├── host.php<br>
-│   │   ├── login.php<br>
-│   │   ├── programs.php<br>
-│   │   ├── sign-up.php<br>
-│   │   ├── <br>
-│   ├── models/<br>
-│   │   ├── connection-bdd.php<br>
-│   │   ├── credentials.php<br>
-│   │   ├── <br>
-│   └── views/<br>
-│       ├── v_about.php<br>
-│       ├── v_contact.php<br>
-│       ├── v_host.php<br>
-│       ├── v_login.php<br>
-│       ├── v_programs.php<br>
-│       ├── v_sign-up.php<br>
-│       ├── <br>
-│       ├── component/<br>
-│       └── layouts/<br>
-│               ├── head.php<br>
-│               └── header.php<br>
-│               <br>
-├── database/<br>
-│   ├── backups/<br>
+├── README.md<br><br>
+├── app<br>
+│   ├── controllers<br>
+│   │   ├── About.php<br>
+│   │   ├── AuthController.php<br>
+│   │   ├── Contact.php<br>
+│   │   ├── Host.php<br>
+│   │   ├── Login.php<br>
+│   │   ├── Programs.php<br>
+│   │   ├── RegisterController.php<br>
+│   │   └── SignUp.php<br>
+│   ├── models<br>
+│   │   ├── AddUserModel.php<br>
+│   │   ├── AuthModel.php<br>
+│   │   ├── config.php<br>
+│   │   └── Database.php<br>
+│   └── views<br>
+│       ├── about.view.php<br>
+│       ├── contact.view.php<br>
+│       ├── host.view.php<br>
+│       ├── login.view.php<br>
+│       ├── programs.view.php<br>
+│       ├── sign-up.view.php<br>
+│       ├── components<br>
+│       └── layouts<br>
+│           ├── head.php<br>
+│           └── header.php<br><br>
+├── database<br>
+│   ├── backups<br>
 │   │   ├── sioleaks-bdd.sql<br>
-│   │   ├── sioleaks-user.sql<br>
-│   │   ├── <br>
-│   └── migrations/<br>
-│           └── 20251004_sioleaks-structure.sql<br>
-│           <br>
-└── public/<br>
+│   │   └── sioleaks-user.sql<br>
+│   └── migrations<br>
+│       └── 20251004_sioleaks-structure.sql<br><br>
+└── public<br>
     ├── favicon.ico<br>
     ├── site.webmanifest<br>
-    ├── <br>
-    └── assets/<br>
-        ├── css/<br>
-        │   ├── main.css<br>
-        │   ├── <br>
-        │   ├── base/<br>
-        │   │   ├── fonts.css<br>
-        │   │   ├── reset.css<br>
-        │   │   ├── <br>
-        │   ├── components/<br>
-        │   │   └── header.css<br>
-        │   │   ├── <br>
-        │   ├── layout/<br>
-        │   ├── pages/<br>
-        │   │   └── home.css<br>
-        │   │   ├── <br>
-        │   └── utilities/<br>
-        │           ├── color.css<br>
-        │           └── transitions.css<br>
-        │           <br>
-        ├── font/<br>
-        │   ├── Inter/<br>
-        │   │   ├── demo.html<br>
-        │   │   ├── Inter-Italic.woff2<br>
-        │   │   ├── Inter-Regular.woff2<br>
-        │   │   └── stylesheet.css<br>
-        │   │   <br>
-        │   ├── Montserrat/<br>
-        │   ├── OpenSans/<br>
-        │   │   ├── OpenSans-Italic-VariableFont_wdth,wght.woff2<br>
-        │   │   └── OpenSans-VariableFont_wdth,wght.woff2<br>
-        │   │   <br>
-        │   └── Roboto/<br>
-        │       ├── demo.html<br>
-        │       ├── Roboto-Italic.woff2<br>
-        │       ├── Roboto-Regular.woff2<br>
-        │       └── stylesheet.css<br>
-        │       <br>
-        ├── img/<br>
-        │   ├── hero_bg.jpg<br>
-        │   ├── hero_bg2.png<br>
-        │   ├── <br>
-        │   ├── favicon/<br>
-        │   │   ├── android-chrome-192x192.png<br>
-        │   │   ├── android-chrome-512x512.png<br>
-        │   │   ├── apple-touch-icon.png<br>
-        │   │   ├── favicon-16x16.png<br>
-        │   │   ├── favicon-32x32.png<br>
-        │   │   ├── <br>
-        │   └── icon/<br>
-        │       ├── icon_favicon.png<br>
-        │       ├── icon_header.png<br>
-        │       └── icon_header2.png<br>
-        │       <br>
-        ├── js/<br>
-        │   └── header.js<br>
-        │   <br>
-        └── medias/<br>
-        └── uploads/<br>
+    ├── assets<br>
+    │   ├── css<br>
+    │   │   ├── main.css<br>
+    │   │   ├── base<br>
+    │   │   │   ├── color.css<br>
+    │   │   │   ├── fonts.css<br>
+    │   │   │   └── reset.css<br>
+    │   │   ├── components<br>
+    │   │   │   └── header.css<br>
+    │   │   ├── layout<br>
+    │   │   ├── pages<br>
+    │   │   │   └── home.css<br>
+    │   │   ├── theme<br>
+    │   │   │   └── theme.css<br>
+    │   │   └── utilities<br>
+    │   │       └── transitions.css<br>
+    │   ├── fonts<br>
+    │   │   ├── Inter<br>
+    │   │   │   ├── demo.html<br>
+    │   │   │   ├── Inter-Italic.woff2<br>
+    │   │   │   ├── Inter-Regular.woff2<br>
+    │   │   │   └── stylesheet.css<br>
+    │   │   ├── OpenSans<br>
+    │   │   │   ├── OpenSans-Italic-VariableFont_wdth,wght.woff2<br>
+    │   │   │   └── OpenSans-VariableFont_wdth,wght.woff2<br>
+    │   │   ├── Overpass<br>
+    │   │   │   ├── Overpass-Italic-VariableFont_wght.woff2<br>
+    │   │   │   └── Overpass-VariableFont_wght.woff2<br>
+    │   │   └── Roboto<br>
+    │   │       ├── demo.html<br>
+    │   │       ├── Roboto-Italic.woff2<br>
+    │   │       ├── Roboto-Regular.woff2<br>
+    │   │       └── stylesheet.css<br>
+    │   ├── img<br>
+    │   │   ├── hero_bg.jpg<br>
+    │   │   ├── hero_bg2.png<br>
+    │   │   ├── favicon<br>
+    │   │   │   ├── android-chrome-192x192.png<br>
+    │   │   │   ├── android-chrome-512x512.png<br>
+    │   │   │   ├── apple-touch-icon.png<br>
+    │   │   │   ├── favicon-16x16.png<br>
+    │   │   │   └── favicon-32x32.png<br>
+    │   │   └── icon<br>
+    │   │       ├── icon_favicon.png<br>
+    │   │       └── icon_header.png<br>
+    │   ├── js<br>
+    │   │   └── header.js<br>
+    │   └── medias<br>
+    └── uploads<br>
+
 
 ## Installation et utilisation
 1. Cloner le dépôt GitHub :  
