@@ -13,6 +13,8 @@ if ($connected == true)
     echo "<p>Connecté</p>";
 ?>
 
+<a href="index.php?section=download&file=cejm_an1_chap01.pdf">Télécharger le résumé</a>
+
 
 </body>
 
