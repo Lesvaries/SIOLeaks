@@ -1,26 +1,20 @@
 <?php
-function get_user($log, $password)
-{
+function get_user($log, $password) {
     global $bdd;
 
-    // Récupère l'utilisateur SANS vérifier le mot de passe
+    // Requête pour récupérer l'utilisateur via username ou email
     $req = $bdd->prepare('SELECT * FROM users 
-                        WHERE username = :loginUser OR email = :loginUser
-                        AND password = :pawdUser');
-    
+                        WHERE username = :loginUser OR email = :loginUser');
     $req->bindParam(':loginUser', $log);
-    $req->bindParam(':pawdUser', $pswd);
     $req->execute();
-    
+
     $user = $req->fetch();
 
-    return $user;  // Retourne les données de l'utilisateur ou false si non trouvé
-    
-//     // Vérifie le mot de passe de manière SÉCURISÉE
-//     if ($user && password_verify($password, $user['password'])) {
-//         return $user;  // Mot de passe correct
-//     }
-    
-//     return false;  // Mot de passe incorrect
+    // Vérifie si l'utilisateur existe et si le mot de passe est correct
+    if ($user && password_verify($password, $user['password'])) {
+        return $user;  // Retourne les données de l'utilisateur
+    }
+
+    return false;  // Identifiants incorrects
 }
 ?>

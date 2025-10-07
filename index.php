@@ -7,11 +7,6 @@ if (!isset($_GET['section'])) {
     exit;
 }
 
-if ($_GET['section'] == 'cnxAuth') {
-    $cnxUser=true;
-    include_once('app/controllers/AuthController.php');
-}
-
 if (
     (isset($_SESSION['validiteConnexion']))
     AND ($_SESSION['validiteConnexion'] == true)
@@ -65,6 +60,10 @@ else
     if ($_GET['section'] == 'register-controller')
     {  
             include_once('app/controllers/RegisterController.php');
+    }
+    if ($_GET['section'] == 'cnxAuth') {
+        $cnxUser=true;
+        include_once('app/controllers/AuthController.php');
     }
 }
 ?>

@@ -1,17 +1,21 @@
 <?php
-    include_once('app/models/Database.php');
+include_once('app/models/Database.php');
 
 // Test de $cnxUser pour différencier d'un login ou une déconnexion
 if($cnxUser == true) {
-    // Demande de connexion
     // Récupération des éléments de la vue login.view.php
+    $wlogin = htmlspecialchars($_POST['wlogin'], ENT_QUOTES);
+    $wpswd = htmlspecialchars($_POST['wpswd'], ENT_QUOTES);
 
-    $wlogin = htmlspecialchars($_POST['wlogin'], ENT_QUOTES,);
-    $wpswd = htmlspecialchars($_POST['wpswd'], ENT_QUOTES,);
+    // DEBUG : Affiche les valeurs reçues (uniquement pour test)
+    error_log("Login reçu: $wlogin");
+    error_log("Mot de passe reçu: $wpswd");
 
     // Appel de la fonction de vérification des identifiants
     include_once('app/models/AuthModel.php');
     $user = get_user($wlogin, $wpswd);
+
+    error_log("Résultat de get_user: " . ($user ? 'Utilisateur trouvé' : 'Aucun utilisateur'));
 
     if ($user) {
         // Authentification réussie

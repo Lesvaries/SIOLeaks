@@ -60,7 +60,7 @@
 
                         echo "
                             <li>
-                                <a href='index.php?section=profile'> <i class='fa-solid fa-circle-user'></i></a>
+                                <a href='index.php?section=profile'> {$_SESSION['username']} </a>
                             </li>
                         ";
                     }
