@@ -17,4 +17,15 @@ function get_user($log, $password) {
 
     return false;  // Identifiants incorrects
 }
+
+function get_user_by_id($id) {
+    global $bdd;
+
+    // Requête pour récupérer l'utilisateur via son ID
+    $req = $bdd->prepare('SELECT * FROM users WHERE id_user = :idUser');
+    $req->bindParam(':idUser', $id);
+    $req->execute();
+
+    return $req->fetch();  // Retourne les données de l'utilisateur ou false si non trouvé
+}
 ?>

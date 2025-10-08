@@ -42,7 +42,7 @@
                             </li>
                         <?php else: ?>
                             <li class="nav-item">
-                                <a href="index.php?section=profile" class="nav-link"><?= htmlspecialchars($_SESSION['username']) ?></a>
+                                <a href="index.php?section=account" class="nav-link"><?= htmlspecialchars($_SESSION['username']) ?></a>
                             </li>
                             <?php if ($roleSessionUser == 1): ?>
                                 <li class="nav-item">

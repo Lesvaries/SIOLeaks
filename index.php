@@ -65,6 +65,10 @@ else
         $cnxUser=true;
         include_once('app/controllers/AuthController.php');
     }
+    if ($_GET['section'] == 'account') {
+        $cnxUser=true;
+        include_once('app/controllers/Account.php');
+    }
     if ($_GET['section'] == 'download') {
         include_once('app/controllers/DownloadController.php');
         $controller = new DownloadController();
