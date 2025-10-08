@@ -46,7 +46,7 @@
                             </li>
                             <?php if ($roleSessionUser == 1): ?>
                                 <li class="nav-item">
-                                    <span class="nav-link text-muted">Admin</span>
+                                    <span class="nav-link">Admin</span>
                                 </li>
                             <?php endif; ?>
                             <li class="nav-item">
