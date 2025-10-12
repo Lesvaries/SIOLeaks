@@ -1,4 +1,3 @@
-<body>
     <h1>Sign Up</h1>
     <form action="./index.php?section=register-controller" method="post">
         <label for="username">Username :</label>
@@ -9,4 +8,3 @@
         <input type="password" id="password" name="password" required><br><br>
         <input type="submit" value="Sign Up">
     </form>
-</body>

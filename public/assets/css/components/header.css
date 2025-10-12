@@ -83,3 +83,7 @@
 .nav-menu ul li a.active:hover {
   color: var(--primary-color);
 }
+
+.btn-themme {
+    color: var(--text-color);
+}

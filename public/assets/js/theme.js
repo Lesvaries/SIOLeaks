@@ -1,24 +1,14 @@
-// Fonction pour charger le thème sauvegardé
-function loadTheme() {
-    const savedTheme = window.localStorage.getItem('theme');
-
-    if (savedTheme === 'dark') {
-        document.documentElement.classList.add('dark-theme');
-    } else {
-        document.documentElement.classList.remove('dark-theme');
-    }
-}
-
-// Appelle la fonction au chargement de la page
-document.addEventListener('DOMContentLoaded', loadTheme);
-
-// Ta fonction toggle reste pareille
+// Ta fonction toggle mise à jour
 function toggle() {
     document.documentElement.classList.toggle('dark-theme');
 
+    const icon = document.getElementById('theme-icon');
+
     if (document.documentElement.classList.contains('dark-theme')) {
-        window.localStorage.setItem('theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        icon.className = 'fas fa-moon';
     } else {
-        window.localStorage.setItem('theme', 'light');
+        localStorage.setItem('theme', 'light');
+        icon.className = 'fas fa-sun';
     }
 }

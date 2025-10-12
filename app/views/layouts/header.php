@@ -54,7 +54,9 @@
             <?php endif; ?>
                 <!-- Button Dark Theme -->
                 <li class="nav-item" role="menuitem">
-                    <button Onclick="toggle()" id="theme-toggle" class="btn btn-outline-secondary">Thème</button>
+                    <button onclick="toggle()" id="theme-toggle" class="btn btn-themme">
+                        <i class="fas fa-sun" id="theme-icon"></i>
+                    </button>
                 </li>
                 
           </ul>

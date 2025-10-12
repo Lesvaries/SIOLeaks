@@ -1,4 +1,3 @@
-<body>
     <section class="">
         <div class="login">
             <h1>Se Connecter</h1>
@@ -20,4 +19,3 @@
             </form>
         </div>
     </section>
-</body>

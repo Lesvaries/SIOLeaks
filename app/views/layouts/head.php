@@ -28,6 +28,8 @@
     if (savedTheme === 'dark') {
         document.documentElement.classList.add('dark-theme');
     }
-    </script>
+</script>
+    <script src="./public/assets/js/theme.js"></script>
 
 </head>
+<body>

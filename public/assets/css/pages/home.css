@@ -29,6 +29,10 @@
     animation: fadeInUp 1s ease forwards;
 }
 
+.content-section span{
+    color: var(--primary-color);
+}
+
 .content-section h1 {
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     font-weight: 700;
@@ -46,7 +50,7 @@
 .hero-btn-primary {
     display: inline-block;
     padding: 16px 48px;
-    background: #ffffff;
+    background: var(--bg-color);
     color: var(--primary-color);
     text-decoration: none;
     font-size: 1.05rem;
@@ -95,8 +99,43 @@
     object-fit: cover;
 }
 
-.test {
-    height: 200px;
-    background-color: #f0f0f0;
+.presentation-section {
+    padding: 80px 0px;
+    border-bottom: 2px solid var(--style-element);
 }
 
+.presentation-row {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    border: solid var(--style-element);
+    padding: 2rem;
+    border-radius: 25px;
+}
+
+.presentation-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.presentation-text p {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* why-section  */
+.why-section {
+    padding: 80px 0;
+    line-height: 100px;
+    border-bottom: 2px solid var(--style-element);
+}
+.why-section span{
+    color: var(--primary-color);
+}
+
+.why-features {
+    line-height: 50px;
+}
