@@ -23,12 +23,13 @@
     <link rel="stylesheet" href="./public/assets/css/main.css">
 
     <script>
-    // Vérifie le thème dans localStorage et applique immédiatement
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        document.documentElement.classList.add('dark-theme');
-    }
-</script>
+        // Vérifie le thème dans localStorage et applique immédiatement
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
+
     <script src="./public/assets/js/theme.js"></script>
 
 </head>
