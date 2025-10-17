@@ -4,6 +4,8 @@
   --text-color: #1F2A44;
   --header-bg: #F7F9FC;
   --style-element: var(--gray-400);
+  --footer-top-bg: #3a6ea5;
+  --footer-bg: #F7F9FC;
 }
 
 /* === Thème sombre (quand la classe est ajoutée) === */
@@ -12,10 +14,16 @@
   --text-color: #E0E0E0;
   --header-bg: #1E2125;
   --style-element: #1E2125;
+  --footer-top-bg: #4a6fa8;
+  --footer-bg: #1E2125;
 }
 /* === Application des styles === */
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+footer{
   transition: background-color 0.3s, color 0.3s;
 }

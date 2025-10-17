@@ -4,3 +4,7 @@ app/models/credentials.php
 # Base de données
 database/backups/sioleaks-bdd.sql
 database/backups/sioleaks-user.sql
+
+fiveserver.config.js
+
+.vscode/

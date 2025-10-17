@@ -1,5 +1,5 @@
 .top-footer{
-    background-color: var(--footer-bg);
+    background-color: var(--footer-top-bg);
     padding: 20px;
 }
 
@@ -17,4 +17,8 @@
 
 .top-footer-content:first-child {
     border-left: none;
+  }
+
+.bottom-footer {
+    background-color: var(--footer-bg);
   }
