@@ -1,0 +1,20 @@
+.top-footer{
+    background-color: var(--footer-bg);
+    padding: 20px;
+}
+
+.top-footer p {
+    font-family:'Open Sans', sans-serif;
+    color: var(--font-color-light);
+}
+
+.top-footer-content{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 40px;
+    border-left: 1px solid white;
+}
+
+.top-footer-content:first-child {
+    border-left: none;
+  }

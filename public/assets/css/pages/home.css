@@ -129,6 +129,7 @@
 /* why-section  */
 .why-section {
     padding: 80px 0;
+    margin: 50px auto;
     line-height: 100px;
     border-bottom: 2px solid var(--style-element);
 }
