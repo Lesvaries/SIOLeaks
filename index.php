@@ -1,15 +1,12 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
 
 session_start();
 include_once('app/models/database.php');
 
-// if (!isset($_GET['section'])) {
-//     header('Location: index.php?section=index');
-//     exit;
-// }
+if (!isset($_GET['section'])) {
+    header('Location: index.php?section=index');
+    exit;
+}
 
 if (
     (isset($_SESSION['validiteConnexion']))
@@ -77,7 +74,13 @@ else
         include_once('app/controllers/DownloadController.php');
         $controller = new DownloadController();
         $controller->download();
-}
+    }
+    // Acces aux pages cours 
+	if ($_GET['section'] == 'CEJM-y1ch01')
+    {  
+        include_once('app/controllers/programs/cejm/CEJM-y1ch01.php');
+    }
+
 }
 ?>
 

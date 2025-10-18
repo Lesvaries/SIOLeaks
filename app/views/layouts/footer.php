@@ -25,7 +25,7 @@
 
                     <div class="row footer align-items-start">
                         <div class="col-3 logo-footer">
-                            <img src="../../../public/assets/img/icon/logo.png" loading="lazy" alt="icon" class="img-fluid">
+                            <img src="./public/assets/img/icon/logo.png" loading="lazy" alt="icon" class="img-fluid">
                         </div>                        
                         <div class="col-3 footer-content">
                             <h2><strong><span>¬</span> Navigation</strong></h2>
