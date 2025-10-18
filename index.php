@@ -8,6 +8,18 @@ if (!isset($_GET['section'])) {
     exit;
 }
 
+if ($_GET['section'] == 'cnxAuth') {
+    $cnxUser=true;
+    include_once('app/controllers/AuthController.php');
+    exit;
+}
+if ($_GET['section'] == 'logout')
+{  
+    $cnxUser=false;
+    include_once('app/controllers/AuthController.php');
+    exit;
+}
+
 if (
     (isset($_SESSION['validiteConnexion']))
     AND ($_SESSION['validiteConnexion'] == true)
@@ -22,9 +34,10 @@ if (
     $connected = false;
     }
 
-include_once('app/views/layouts/head.php');
-include_once('app/views/layouts/header.php');
-
+if ($_GET['section'] !== 'download' && $_GET['section'] !== 'cnxAuth') {
+    include_once('app/views/layouts/head.php');
+    include_once('app/views/layouts/header.php');
+}
 
 if (!isset($_GET['section']) OR $_GET['section'] == 'index')
 {
@@ -49,11 +62,6 @@ else
     {  
             include_once('app/controllers/Login.php');
     }
-    if ($_GET['section'] == 'logout')
-    {  
-            $cnxUser=false;
-            include_once('app/controllers/AuthController.php');
-    }
 	if ($_GET['section'] == 'sign-up')
     {  
             include_once('app/controllers/SignUp.php');
@@ -61,10 +69,6 @@ else
     if ($_GET['section'] == 'register-controller')
     {  
             include_once('app/controllers/RegisterController.php');
-    }
-    if ($_GET['section'] == 'cnxAuth') {
-        $cnxUser=true;
-        include_once('app/controllers/AuthController.php');
     }
     if ($_GET['section'] == 'account') {
         $cnxUser=true;
@@ -74,6 +78,7 @@ else
         include_once('app/controllers/DownloadController.php');
         $controller = new DownloadController();
         $controller->download();
+        exit; // Arrête le script ici pour éviter d'autres chargements
     }
     // Acces aux pages cours 
 	if ($_GET['section'] == 'CEJM-y1ch01')

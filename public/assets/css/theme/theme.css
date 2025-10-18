@@ -2,20 +2,18 @@
 :root {
   --bg-color: var(--gray-200);
   --text-color: #1F2A44;
-  --header-bg: #F7F9FC;
   --style-element: var(--gray-400);
   --footer-top-bg: #3a6ea5;
-  --footer-bg: #F7F9FC;
+  --box-bg:#F7F9FC
 }
 
 /* === Thème sombre (quand la classe est ajoutée) === */
 .dark-theme {
   --bg-color: #121417;
   --text-color: #E0E0E0;
-  --header-bg: #1E2125;
   --style-element: #1E2125;
   --footer-top-bg: #4a6fa8;
-  --footer-bg: #1E2125;
+  --box-bg: #1E2125;
 }
 /* === Application des styles === */
 body {

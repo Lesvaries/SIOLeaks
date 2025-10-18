@@ -7,8 +7,20 @@ class DownloadController {
             exit;
         }
 
-        $filename = basename($_GET['file']);
-        $filepath = __DIR__ . '/../../public/uploads/CEJM/' . $filename;
+        $fileInput = $_GET['file'];
+
+        // Sécurise le chemin pour éviter les traversées de dossiers
+        $fileInput = str_replace('../', '', $fileInput);
+        $fileInput = str_replace('..\\', '', $fileInput);
+
+        $filename = basename($fileInput); // Nom du fichier
+        $folder = dirname($fileInput);   // Dossier (ex: CEJM)
+
+        if ($folder === '.') {
+            $folder = ''; // Si pas de dossier
+        }
+
+        $filepath = __DIR__ . '/../../public/uploads/' . $folder . '/' . $filename;
 
         if (file_exists($filepath)) {
             header('Content-Type: application/pdf');

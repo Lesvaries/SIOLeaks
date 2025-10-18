@@ -7,15 +7,9 @@ if($cnxUser == true) {
     $wlogin = htmlspecialchars($_POST['wlogin'], ENT_QUOTES);
     $wpswd = htmlspecialchars($_POST['wpswd'], ENT_QUOTES);
 
-    // DEBUG : Affiche les valeurs reçues (uniquement pour test)
-    error_log("Login reçu: $wlogin");
-    error_log("Mot de passe reçu: $wpswd");
-
     // Appel de la fonction de vérification des identifiants
     include_once('app/models/AuthModel.php');
     $user = get_user($wlogin, $wpswd);
-
-    error_log("Résultat de get_user: " . ($user ? 'Utilisateur trouvé' : 'Aucun utilisateur'));
 
     if ($user) {
         // Authentification réussie
@@ -27,13 +21,13 @@ if($cnxUser == true) {
         $_SESSION['validiteConnexion'] = true;
 
         // Redirection vers la page d'accueil ou tableau de bord
-        header('Location:index.php?section=index');
-        exit();
+        header('Location: index.php?section=index');
+        exit(); // Arrête le script ici pour éviter d'autres chargements
     } else {
         // Coordonnées incorrectes
         $_SESSION['validiteConnexion'] = false;
 
-        // Échec de l'authentification
+        // Charge la vue de login avec le message d'erreur
         $msgCnx = "Identifiants incorrects. Veuillez réessayer.";
         include_once('app/views/login.view.php');
     }
@@ -42,7 +36,7 @@ if($cnxUser == true) {
     session_destroy();
 
     // Redirection vers la page d'accueil
-    header('Location:index.php?section=index');
+    header('Location: index.php?section=index');
     exit();
 }
 ?>
