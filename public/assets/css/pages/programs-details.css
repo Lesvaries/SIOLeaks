@@ -1,0 +1,19 @@
+.box-element{
+    background-color: var(--box-bg) !important;
+}
+ul.list-group,
+ol.list-group {
+    background-color: var(--box-bg) !important;
+}
+
+/* Surcharge le fond du list-group en mode sombre */
+.dark-theme ul.list-group,
+.dark-theme ol.list-group {
+    background-color: var(--box-bg) !important;
+}
+
+/* Surcharge chaque élément du list-group */
+.dark-theme .list-group-item {
+    background-color: var(--box-bg) !important;
+    color: var(--text-color) !important;
+}

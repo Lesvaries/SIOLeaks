@@ -23,12 +23,6 @@
                 <li class="nav-item" role="menuitem">
                     <a href="index.php?section=cours" class="nav-link">Cours</a>
                 </li>
-                <li class="nav-item" role="menuitem">
-                    <a href="index.php?section=about" class="nav-link">À propos</a>
-                </li>
-                <li class="nav-item" role="menuitem">
-                    <a href="index.php?section=contact" class="nav-link">Contact</a>
-                </li>
 
             <?php if (!$connected): ?>
                 <li class="nav-item" role="menuitem">

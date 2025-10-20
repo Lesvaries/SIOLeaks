@@ -1,19 +1,25 @@
-.box-element{
-    background-color: var(--box-bg) !important;
-}
-ul.list-group,
-ol.list-group {
-    background-color: var(--box-bg) !important;
+.filters-toolbar {
+    background-color: var(--box-bg);
+    color: var(--text-color);
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    justify-content: space-between; /* Année à gauche, Spe à droite */
+    align-items: center;
+    margin-top: -25px;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    font-weight: 200;
 }
 
-/* Surcharge le fond du list-group en mode sombre */
-.dark-theme ul.list-group,
-.dark-theme ol.list-group {
-    background-color: var(--box-bg) !important;
+.year-group,
+.specialisation-group {
+    display: flex;
+    gap: 10px;
 }
 
-/* Surcharge chaque élément du list-group */
-.dark-theme .list-group-item {
-    background-color: var(--box-bg) !important;
-    color: var(--text-color) !important;
+.year-group,
+.specialisation-group li{
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
 }

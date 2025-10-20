@@ -94,5 +94,7 @@ else
 <script src="./public/assets/js/header.js" defer></script>
 
 <?php
-include_once('app/views/layouts/footer.php');
+if (!isset($_GET['section']) || ($_GET['section'] !== 'login' && $_GET['section'] !== 'sign-up')) {
+    include_once('app/views/layouts/footer.php');
+}
 ?>
