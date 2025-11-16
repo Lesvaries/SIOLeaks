@@ -23,3 +23,37 @@
     text-decoration: none;
     color: inherit;
 }
+
+.cours {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.matiere {
+    margin-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px; /* Espacement sous le titre */
+}
+
+.card-cours {
+    width: 200px;
+    padding: 1.5rem;
+    border: solid 1px var(--style-element);
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* .cours article:not(.active) {
+    display: none;
+}
+
+.matiere:not(.active) {
+    display: none;
+} */
