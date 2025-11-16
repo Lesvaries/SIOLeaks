@@ -43,10 +43,13 @@
 }
 
 .card-cours {
+    background-color: var(--box-bg);
     width: 200px;
     padding: 1.5rem;
     border: solid 1px var(--style-element);
     text-align: center;
+    border-radius: 1rem;
+    box-shadow:  2px 2px 15px 0px var(--shadow-color);
     flex-shrink: 0;
 }
 
