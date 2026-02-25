@@ -31,6 +31,7 @@
     </script>
 
     <script src="./public/assets/js/theme.js"></script>
+    <script src="./public/assets/js/progrom.js"></script>
 
 </head>
 <body>
