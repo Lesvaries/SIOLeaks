@@ -1,0 +1,18 @@
+# Désactiver le listage des dossiers
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Définir la base de réécriture sur ton dossier projet
+    RewriteBase /SIOLeaks_v2/
+
+    # Si on demande l'accès à "app", on bloque (Erreur 403)
+    RewriteRule ^app/.*$ - [F,L]
+
+    # Si la requête ne pointe pas déjà vers le dossier public
+    RewriteCond %{REQUEST_URI} !^/SIOLeaks_v2/public/
+    
+    # On redirige tout vers public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
