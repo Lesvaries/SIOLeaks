@@ -1,0 +1,3 @@
+GRANT USAGE ON *.* TO `sioleaks_user`@`localhost` IDENTIFIED BY PASSWORD '*AEC41F3127D384CAAFB5B0E3BD16AC63BD3D1112';
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON `sioleaks\_bdd`.* TO `sioleaks_user`@`localhost`;
