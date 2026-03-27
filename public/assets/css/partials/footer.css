@@ -1,0 +1,93 @@
+footer {
+    background-color: var(--box-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.top-footer{
+    background-color: var(--footer-top-bg);
+    color: white;
+    padding: 2rem 0;
+}
+
+.top-footer h2 {
+    font-family:'Open Sans', sans-serif;
+    color: var(--font-color-light);
+}
+
+.top-footer-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 40px;
+    border-left: 1px solid white;
+}
+
+.top-footer-content h2{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.top-footer-content ul{
+    padding-left: 0;       /* Supprime le retrait par défaut */
+    list-style-position: inside; /* Place les numéros à l’intérieur du bloc */
+    max-width: 600px;    /*Optionnel : pour limiter la largeur */
+    margin: 0 auto;        /* Centre la liste si tu veux */
+    text-align: left;  
+}
+
+.top-footer-content:first-child {
+    border-left: none;
+}
+
+.footer {
+    background-color: var(--box-bg);
+}
+
+.logo-footer img{
+    display: block;
+    align-content: center;
+    justify-content: center;
+    margin: 50px auto;
+    height: 150px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 40px;
+}
+
+.footer-content h2{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.footer-content ul{
+    padding-left: 0; 
+    max-width: 600px;    
+    margin: 0 auto;      
+    text-align: left;  
+}
+
+.footer-content li{
+    line-height: 2em;
+}
+
+.footer-content span{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.bottom-footer{
+    background-color: var(--bg-color);
+}
