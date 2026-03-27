@@ -15,7 +15,9 @@
         case 'course':
             include  '../app/controllers/courseController.php';
             break;
-
+        case 'contact':
+            include '../app/controllers/contactController.php';
+            break;
     }
 
 

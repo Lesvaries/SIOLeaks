@@ -1,4 +1,3 @@
 <?php 
-
-include_once '..app/views/contact.php';
+include_once '../app/views/pages/contact.php';
 ?>
