@@ -1,6 +1,6 @@
 <?php
-include_once '../models/courseModels.php';
+include_once '../app/models/courseModel.php';
 
-include_once '../views/pages/course.php';
+include_once '../app/views/pages/course.php';
 
 ?>
