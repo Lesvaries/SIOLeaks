@@ -1,16 +1,22 @@
+.homepage {
+        background-color: var(--conventional-white);
+}
+
 .hero-title {
     font-family: 'ClashDisplay', sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 5rem;
     text-align : center;
-    font-size: clamp(3rem, 12vw, 15rem);
+    font-size: clamp(3rem, 14vw, 15rem);
     line-height: 0.85;
-    letter-spacing: -0.06em;
+    letter-spacing: -0.03em;
     margin-top: 100px;
+    margin-bottom: 100px;
     color: var(--font-color-dark);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;}
 
 .hero-title span {
     color: var(--primary-color);
+    letter-spacing: 0.05em;
 }

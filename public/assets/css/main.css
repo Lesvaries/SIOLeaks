@@ -19,3 +19,6 @@
 @import './pages/homepage.css';
 /* @import './pages/course.css'; */
 /* @import './pages/contact.css'; */
+
+/* 5. FONTS  */
+@import './fonts/clash-display.css';
