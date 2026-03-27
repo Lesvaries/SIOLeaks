@@ -1,1 +1,1 @@
-<p>Voici la page d'accueil</p>
+<h1 class="hero-title"><span>SIO</span>Leaks</h1>

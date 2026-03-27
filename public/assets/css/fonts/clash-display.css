@@ -1,0 +1,14 @@
+/**
+* Font Family: Clash Display Variable
+* On ne garde QUE ce dont on a besoin.
+*/
+@font-face {
+  font-family: 'ClashDisplay';
+  /* On pointe vers le dossier où TU as mis le fichier .woff2 */
+  src: url('../fonts/ClashDisplay-Variable.woff2') format('woff2-variations');
+  
+  /* On définit la plage de poids supportée (200 à 700) */
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
