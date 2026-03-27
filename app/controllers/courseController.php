@@ -1,7 +1,7 @@
 <?php
-include_once '../models/courseModels.php';
+include_once '../app/models/courseModel.php';
 
-include_once '../views/course.php';
+include_once '../app/views/course.php';
 
 
 
