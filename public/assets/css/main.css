@@ -1,0 +1,21 @@
+/* 
+ * Main CSS - Feuille principale
+ * Assemble toutes les autres feuilles de style
+ * Chargée une seule fois dans le HTML
+ */
+
+ /* 1. BASE */
+@import './base/reset.css';
+@import './base/color.css';
+@import './base/fonts.css';
+
+ /* 2. Partials  */
+@import './partials/header.css';
+/* @import './partials/footer.css'; */
+
+ /* 3. COMPONENTS  */
+
+ /* 4. PAGES  */
+@import './pages/homepage.css';
+/* @import './pages/course.css'; */
+/* @import './pages/contact.css'; */

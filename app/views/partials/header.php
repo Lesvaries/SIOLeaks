@@ -5,7 +5,7 @@
         
         <!-- Logo -->
         <a href="index.php?section=index" class="navbar-brand logo">
-          <img src="./public/assets/img/icon/icon_header.png" alt="Logo du site de cours SIO" height="40">
+          <img src="assets/img/icon/icon_header.png" alt="SIOLeaks" height="40">
         </a>
 
         <!-- Bouton toggle pour mobile -->
@@ -18,10 +18,13 @@
         <nav class="navbar-collapse collapse nav-menu" id="mainNav" role="navigation" aria-label="Menu principal">
             <ul class="d-flex align-items-center ms-auto" role="menubar">
                 <li class="nav-item" role="menuitem">
-                    <a href="index.php?section=index" class="nav-link">Accueil</a>
+                    <a href="index.php?section=homepage" class="nav-link">Accueil</a>
                 </li>
                 <li class="nav-item" role="menuitem">
-                    <a href="index.php?section=cours" class="nav-link">Cours</a>
+                    <a href="index.php?section=course" class="nav-link">Cours</a>
+                </li>
+                <li class="nav-item" role="menuitem">
+                    <a href="index.php?section=contact" class="nav-link">Contact</a>
                 </li>
                 
           </ul>
