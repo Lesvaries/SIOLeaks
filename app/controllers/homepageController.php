@@ -1,3 +1,3 @@
 <?php
-include_once '../app/views/homepage.php';
+include_once '../app/views/pages/homepage.php';
 ?>

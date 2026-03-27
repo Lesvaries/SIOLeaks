@@ -1,0 +1,1 @@
+<p>Voici la page d'accueil</p>
