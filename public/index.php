@@ -4,7 +4,7 @@
 <body>
 <?php
     include_once '../app/views/partials/header.php';
-    //include './app/models/database.php'; 
+    require_once '../app/models/database.php';
 
      $section = $_GET['section'] ?? 'homepage'; 
 
